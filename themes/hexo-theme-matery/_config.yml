@@ -121,13 +121,13 @@ indexbtn:
   enable: true
   name: Github
   icon: fab fa-github-alt
-  url: https://github.com/xuyunxinGitHub/xuyunxinGitHub.github.io
+  url: https://github.com/heixinxin/heixinxin.github.io
 
 # The configurations of the second line of home banner
 # icon/button will not show up if you leave the corresponding socialLink empty
 # 首页 banner 中的第二行个人信息配置，留空即不启用
 socialLink:
-  github:  https://github.com/xuyunxinGitHub
+  github:  https://github.com/heixinxin
   email: 2530528993@qq.com
   facebook: # https://www.facebook.com/xxx
   twitter: # https://twitter.com/xxx
@@ -267,12 +267,12 @@ postCalendar: true
 # Gitalk 评论模块的配置，默认为不激活
 gitalk:
   enable: true
-  owner: xuyunxingithub
-  repo: xuyunxingithub.github.io
+  owner: heixinxin
+  repo: heixinxin.github.io
   oauth:
     clientId: cb5992d173a02bd0fa60
     clientSecret: 6fc48d0b9404dcee22f948a7f5f27a45d5072cbe
-  admin: xuyunxingithub
+  admin: heixinxin
 
 # the Gitment config，default disabled
 # Gitment 评论模块的配置，默认为不激活
@@ -315,7 +315,7 @@ valine:
 # 配置是否在 header 中显示 fork me on github 的图标，默认为true，你可以修改为你的仓库地址.
 githubLink:
   enable: true
-  url: https://github.com/xuyunxinGitHub/xuyunxinGitHub.github.io
+  url: https://github.com/heixinxin/heixinxin.github.io
   title: Fork Me
 
 # The password verification feature of read post. To use this feature,
