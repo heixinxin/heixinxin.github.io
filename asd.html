@@ -1,0 +1,180 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="yugao">
+    <div>
+        <label for="yurou">鱼肉:</label>
+        <input type="text" id="yurou" value="18">
+        斤
+    </div>
+    <div>
+        <label for="feirou">肥肉:</label>
+        <input type="text" id="feirou" value="7">
+        斤
+    </div>
+    <div>
+        <label for="shengjiang">生姜:</label>
+        <input type="text" id="shengjiang" value="8">
+        两
+    </div>
+    <div>
+        <label for="cong">葱:</label>
+        <input type="text" id="cong" value="4">
+        两
+    </div>
+    <div>
+        <label for="shui">水:</label>
+        <input type="text" id="shui" value="16">
+        斤
+    </div>
+    <div>
+        <label for="shengfen">生粉:</label>
+        <input type="text" id="shengfen" value="4.5">
+        斤
+    </div>
+    <div>
+        <label for="jidan">鸡蛋:</label>
+        <input type="text" id="jidan" value="48">
+        个
+    </div>
+    <div>
+        <label for="yan">盐:</label>
+        <input type="text" id="yan" value="6">
+        两
+    </div>
+    <div>
+        <label for="weijing">味精:</label>
+        <input type="text" id="weijing" value="2">
+        两
+    </div>
+        <button class="button" onclick="jisuan()">计算</button>
+        <button class="button" onclick="chongzhi()">重置</button>
+    </div>
+</body>
+<script>
+    let yurou = document.getElementById("yurou");
+    let feirou = document.getElementById("feirou");
+    let shengjiang = document.getElementById("shengjiang");
+    let cong = document.getElementById("cong");
+    let shui = document.getElementById("shui");
+    let shengfen = document.getElementById("shengfen");
+    let jidan = document.getElementById("jidan");
+    let yan = document.getElementById("yan");
+    let weijing = document.getElementById("weijing");
+    function chongzhi() {
+        yurou.value = 18;
+        feirou.value = 7;
+        shengjiang.value = 8;
+        cong.value = 4;
+        shui.value = 16;
+        shengfen.value = 4.5;
+        jidan.value = 48;
+        yan.value = 6;
+        weijing.value = 2;
+    }
+    function jisuan() {
+        if (yurou.value !== "18") {
+            console.log(1)
+            f(Number(yurou.value) / 18, "yurou")
+            return
+        }
+        if (feirou.value !== "7") {
+            console.log(33)
+            f(Number(feirou.value) / 7, "feirou")
+            return
+        }
+        if (shengjiang.value !== "8") {
+            f(Number(shengjiang.value) / 8, "shengjiang")
+            return
+        }
+        if (cong.value !== "4") {
+            f(Number(cong.value) / 4, "cong")
+            return
+        }
+        if (shui.value !== "16") {
+            f(Number(shui.value) / 16, "shui")
+            return
+        }
+        if (shengfen.value !== "4.5") {
+            f(Number(shengfen.value) / 4.5, "shengfen")
+            return
+        }
+        if (jidan.value !== "48") {
+            f(Number(jidan.value) / 48, "jidan")
+            return
+        }
+        if (yan.value !== "6") {
+            f(Number(yan.value) / 6, "yan")
+            return
+        }
+        if (weijing.value !== "2") {
+            f(Number(weijing.value) / 2, "weijing")
+            return
+        }
+    }
+
+    function f(arg, arg1) {
+        if (arg1 !== "yurou") {
+            console.log(2)
+            yurou.value = Number(yurou.value) * arg;
+        }
+        if (arg1 !== "feirou") {
+            feirou.value = Number(feirou.value) * arg;
+        }
+        if (arg1 !== "shengjiang") {
+            shengjiang.value = Number(shengjiang.value) * arg;
+        }
+        if (arg1 !== "cong") {
+            cong.value = Number(cong.value) * arg;
+        }
+        if (arg1 !== "shui") {
+            shui.value = Number(shui.value) * arg;
+        }
+        if (arg1 !== "shengfen") {
+            shengfen.value = Number(shengfen.value) * arg;
+        }
+        if (arg1 !== "jidan") {
+            jidan.value = Number(jidan.value) * arg;
+        }
+        if (arg1 !== "yan") {
+            yan.value = Number(yan.value) * arg;
+        }
+        if (arg1 !== "weijing") {
+            weijing.value = Number(weijing.value) * arg;
+        }
+    }
+</script>
+<style>
+    .yugao {
+        padding-left: 20%;
+    }
+    .yugao div label {
+        display: inline-block;
+        width: 50px;
+        margin-bottom: 2px;
+        margin-top: 2px;
+    }
+    .yugao div input {
+        display: inline-block;
+        width: 100px;
+    }
+    .button {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 5px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+</style>
+</html>
+
+
+
